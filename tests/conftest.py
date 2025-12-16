@@ -1,7 +1,11 @@
 import pytest
 import logging
-from src.api import BVNKClient
-from src.wallet_utils import map_wallets_by_currency
+from wallet_utils import map_wallets_by_currency
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src")))
+
+from api import BVNKClient
 
 logging.basicConfig(level=logging.INFO)
 

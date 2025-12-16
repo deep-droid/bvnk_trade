@@ -1,5 +1,5 @@
 import requests
-from .logging_utils import log_request_response
+from logging_utils import log_request_response
 
 class BVNKClient:
     # Update address there if required

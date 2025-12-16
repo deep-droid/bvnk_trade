@@ -1,7 +1,7 @@
 import pytest
 import time 
-from src.quote_utils import build_quote_payload, wait_for_success
-from src.schemas import assert_quote_schema
+from quote_utils import build_quote_payload, wait_for_success
+from schemas import assert_quote_schema
 
 @pytest.mark.smoke
 def test_create_quote(api, wallet_map):

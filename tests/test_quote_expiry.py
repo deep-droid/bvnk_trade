@@ -1,6 +1,6 @@
 import pytest
 import time
-from src.quote_utils import build_quote_payload
+from quote_utils import build_quote_payload
 
 @pytest.mark.e2e
 @pytest.mark.slow

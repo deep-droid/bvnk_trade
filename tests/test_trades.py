@@ -1,7 +1,7 @@
 import pytest
 import math 
-from src.quote_utils import build_quote_payload, wait_for_success
-from src.wallet_utils import extract_balances
+from quote_utils import build_quote_payload, wait_for_success
+from wallet_utils import extract_balances
 
 @pytest.mark.e2e
 @pytest.mark.slow

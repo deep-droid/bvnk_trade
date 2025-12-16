@@ -1,5 +1,5 @@
 import pytest
-from src.quote_utils import build_quote_payload, wait_for_success
+from quote_utils import build_quote_payload, wait_for_success
 
 @pytest.mark.smoke
 def test_list_wallets(wallets):

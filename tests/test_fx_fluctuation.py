@@ -1,6 +1,6 @@
 import pytest
 import time
-from src.quote_utils import build_quote_payload
+from quote_utils import build_quote_payload
 
 @pytest.mark.e2e
 def test_exchange_rate_fluctuates_over_time(api, wallet_map):
