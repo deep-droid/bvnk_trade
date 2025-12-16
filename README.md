@@ -25,30 +25,6 @@ Built with pytest, covering authentication, wallets, quotes, and currency conver
 
 🐳 Docker & CI ready
 
-🏗 Project Structure
-bvnk/
-├── api/
-│   ├── client.py          # BVNK API client (testable)
-│   ├── exceptions.py
-│   └── __init__.py
-│
-├── helpers/
-│   ├── wallets.py         # wallet mapping & balance helpers
-│   ├── quotes.py          # quote helpers & polling
-│   └── assertions.py     # schema & balance assertions
-│
-├── tests/
-│   ├── test_auth.py
-│   ├── test_wallets.py
-│   ├── test_quotes.py
-│   ├── test_trades.py     # E2E trade flows
-│   └── conftest.py
-│
-├── requirements.txt
-├── pytest.ini
-├── .gitignore
-└── README.md
-
 🐍 Requirements
 
 Python 3.9+
@@ -69,6 +45,9 @@ source .venv/bin/activate        # macOS/Linux
 
 3️⃣ Install dependencies
 pip install -r requirements.txt
+
+3️⃣ pip install -e .
+Important: Always run pip install -e . whenever you add new modules in src/ so that your changes are available to tests.
 
 🧪 Running Tests
 ▶️ Run all tests
