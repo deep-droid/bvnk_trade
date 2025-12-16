@@ -28,27 +28,32 @@ Built with pytest, covering authentication, wallets, quotes, and currency conver
 🐍 Requirements
 
 Python 3.9+
-
 pip
 
-Internet access (tests hit BVNK simulator)
+
 
 🔧 Installation
+
 1️⃣ Clone the repository
 git clone https://github.com/deep-droid/bvnk.git
 cd bvnk
+
 
 2️⃣ Create a virtual environment
 python -m venv .venv
 source .venv/bin/activate        # macOS/Linux
 .venv\Scripts\activate           # Windows
 
+
 3️⃣ Install dependencies
 pip install -r requirements.txt
+
 
 3️⃣ pip install -e .
 Important: Always run pip install -e . whenever you add new modules in src/ so that your changes are available to tests.
 
+
 🧪 Running Tests
+
 ▶️ Run all tests
 pytest
